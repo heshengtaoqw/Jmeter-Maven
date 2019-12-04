@@ -155,7 +155,7 @@ log.info(&quot;CSV文件行数： &quot; + rowCount);</stringProp>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="delimiter">,</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
-            <stringProp name="filename">./获取验证码.csv</stringProp>
+            <stringProp name="filename">E:/久其软件/自动化测试/Jmeter/Jmeter-Ant/接口自动化用例/获取验证码/获取验证码.csv</stringProp>
             <boolProp name="ignoreFirstLine">true</boolProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">false</boolProp>
