@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testResults version="1.2">
-<httpSample t="64" it="0" lt="64" ct="35" ts="1575440828445" s="false" lb="C0001_获取验证码_正常获取验证码" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="324" sby="166" sc="1" ec="1" ng="1" na="1" hn="jq-PC">
+<httpSample t="74" it="0" lt="74" ct="43" ts="1575729422297" s="true" lb="C0001_获取验证码_正常获取验证码" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="330" sby="166" sc="1" ec="0" ng="1" na="1" hn="jq-PC">
   <assertionResult>
     <name>Response Assertion</name>
-    <failure>true</failure>
+    <failure>false</failure>
     <error>false</error>
-    <failureMessage>Test failed: text expected to contain /成功/</failureMessage>
   </assertionResult>
   <responseHeader class="java.lang.String">HTTP/1.1 200 OK
 Server: nginx/1.15.2
-Date: Wed, 04 Dec 2019 06:27:08 GMT
+Date: Sat, 07 Dec 2019 14:37:02 GMT
 Content-Type: text/json;charset=UTF-8
-Content-Length: 80
+Content-Length: 86
 Connection: keep-alive
 Cache-Control: no-store
 Pragma: no-cache
@@ -21,14 +20,14 @@ Expires: Thu, 01 Jan 1970 00:00:00 GMT
 Host: 10.31.0.59
 User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_181)
 </requestHeader>
-  <responseData class="java.lang.String">{&quot;retcode&quot;:208,&quot;explanation&quot;:&quot;验证码请求过于频繁，请稍候再试。&quot;}</responseData>
+  <responseData class="java.lang.String">{&quot;retcode&quot;:0,&quot;available_time&quot;:120,&quot;explanation&quot;:&quot;成功&quot;,&quot;unregister_telephone&quot;:false}</responseData>
   <responseFile class="java.lang.String"></responseFile>
   <cookies class="java.lang.String"></cookies>
   <method class="java.lang.String">GET</method>
   <queryString class="java.lang.String"></queryString>
   <java.net.URL>http://10.31.0.59/verifycode?cellphone=13623818717&amp;ty=true&amp;version=141</java.net.URL>
 </httpSample>
-<httpSample t="18" it="0" lt="18" ct="0" ts="1575440828529" s="true" lb="C0002_获取验证码_手机号异常" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="329" sby="167" sc="1" ec="0" ng="1" na="1" hn="jq-PC">
+<httpSample t="17" it="0" lt="17" ct="0" ts="1575729422397" s="true" lb="C0002_获取验证码_手机号异常" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="329" sby="167" sc="1" ec="0" ng="1" na="1" hn="jq-PC">
   <assertionResult>
     <name>Response Assertion</name>
     <failure>false</failure>
@@ -36,7 +35,7 @@ User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_181)
   </assertionResult>
   <responseHeader class="java.lang.String">HTTP/1.1 200 OK
 Server: nginx/1.15.2
-Date: Wed, 04 Dec 2019 06:27:08 GMT
+Date: Sat, 07 Dec 2019 14:37:02 GMT
 Content-Type: text/json;charset=UTF-8
 Content-Length: 85
 Connection: keep-alive
@@ -55,7 +54,7 @@ User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_181)
   <queryString class="java.lang.String"></queryString>
   <java.net.URL>http://10.31.0.59/verifycode?cellphone=13623818abc&amp;ty=false&amp;version=141</java.net.URL>
 </httpSample>
-<httpSample t="29" it="0" lt="29" ct="0" ts="1575440828554" s="true" lb="C0003_获取验证码_无手机号" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="294" sby="145" sc="1" ec="0" ng="1" na="1" hn="jq-PC">
+<httpSample t="17" it="0" lt="17" ct="0" ts="1575729422422" s="true" lb="C0003_获取验证码_无手机号" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="294" sby="145" sc="1" ec="0" ng="1" na="1" hn="jq-PC">
   <assertionResult>
     <name>Response Assertion</name>
     <failure>false</failure>
@@ -63,7 +62,7 @@ User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_181)
   </assertionResult>
   <responseHeader class="java.lang.String">HTTP/1.1 200 OK
 Server: nginx/1.15.2
-Date: Wed, 04 Dec 2019 06:27:08 GMT
+Date: Sat, 07 Dec 2019 14:37:02 GMT
 Content-Type: text/json;charset=UTF-8
 Content-Length: 50
 Connection: keep-alive
@@ -82,7 +81,7 @@ User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_181)
   <queryString class="java.lang.String"></queryString>
   <java.net.URL>http://10.31.0.59/verifycode?ty=false&amp;version=141</java.net.URL>
 </httpSample>
-<httpSample t="15" it="0" lt="15" ct="0" ts="1575440828596" s="true" lb="C0004_获取验证码_不发送体验验证码" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="329" sby="167" sc="1" ec="0" ng="1" na="1" hn="jq-PC">
+<httpSample t="14" it="0" lt="14" ct="0" ts="1575729422444" s="true" lb="C0004_获取验证码_不发送体验验证码" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="329" sby="167" sc="1" ec="0" ng="1" na="1" hn="jq-PC">
   <assertionResult>
     <name>Response Assertion</name>
     <failure>false</failure>
@@ -90,7 +89,7 @@ User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_181)
   </assertionResult>
   <responseHeader class="java.lang.String">HTTP/1.1 200 OK
 Server: nginx/1.15.2
-Date: Wed, 04 Dec 2019 06:27:08 GMT
+Date: Sat, 07 Dec 2019 14:37:02 GMT
 Content-Type: text/json;charset=UTF-8
 Content-Length: 85
 Connection: keep-alive
@@ -109,7 +108,7 @@ User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_181)
   <queryString class="java.lang.String"></queryString>
   <java.net.URL>http://10.31.0.59/verifycode?cellphone=13623811807&amp;ty=false&amp;version=141</java.net.URL>
 </httpSample>
-<httpSample t="15" it="0" lt="15" ct="0" ts="1575440828620" s="true" lb="C0005_获取验证码_无验证码参数" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="329" sby="158" sc="1" ec="0" ng="1" na="1" hn="jq-PC">
+<httpSample t="26" it="0" lt="26" ct="0" ts="1575729422464" s="true" lb="C0005_获取验证码_无验证码参数" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="329" sby="158" sc="1" ec="0" ng="1" na="1" hn="jq-PC">
   <assertionResult>
     <name>Response Assertion</name>
     <failure>false</failure>
@@ -117,7 +116,7 @@ User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_181)
   </assertionResult>
   <responseHeader class="java.lang.String">HTTP/1.1 200 OK
 Server: nginx/1.15.2
-Date: Wed, 04 Dec 2019 06:27:08 GMT
+Date: Sat, 07 Dec 2019 14:37:02 GMT
 Content-Type: text/json;charset=UTF-8
 Content-Length: 85
 Connection: keep-alive
@@ -136,7 +135,7 @@ User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_181)
   <queryString class="java.lang.String"></queryString>
   <java.net.URL>http://10.31.0.59/verifycode?cellphone=13623811808&amp;version=141</java.net.URL>
 </httpSample>
-<httpSample t="10" it="0" lt="10" ct="0" ts="1575440828641" s="true" lb="C0006_获取验证码_无版本号" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="329" sby="155" sc="1" ec="0" ng="1" na="1" hn="jq-PC">
+<httpSample t="15" it="0" lt="15" ct="0" ts="1575729422497" s="true" lb="C0006_获取验证码_无版本号" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="329" sby="155" sc="1" ec="0" ng="1" na="1" hn="jq-PC">
   <assertionResult>
     <name>Response Assertion</name>
     <failure>false</failure>
@@ -144,7 +143,7 @@ User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_181)
   </assertionResult>
   <responseHeader class="java.lang.String">HTTP/1.1 200 OK
 Server: nginx/1.15.2
-Date: Wed, 04 Dec 2019 06:27:08 GMT
+Date: Sat, 07 Dec 2019 14:37:02 GMT
 Content-Type: text/json;charset=UTF-8
 Content-Length: 85
 Connection: keep-alive
@@ -163,7 +162,7 @@ User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_181)
   <queryString class="java.lang.String"></queryString>
   <java.net.URL>http://10.31.0.59/verifycode?cellphone=13623811809&amp;ty=false</java.net.URL>
 </httpSample>
-<httpSample t="23" it="0" lt="23" ct="0" ts="1575440828661" s="true" lb="C0007_获取验证码_版本号改变" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="329" sby="167" sc="1" ec="0" ng="1" na="1" hn="jq-PC">
+<httpSample t="15" it="0" lt="15" ct="0" ts="1575729422525" s="true" lb="C0007_获取验证码_版本号改变" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="329" sby="167" sc="1" ec="0" ng="1" na="1" hn="jq-PC">
   <assertionResult>
     <name>Response Assertion</name>
     <failure>false</failure>
@@ -171,7 +170,7 @@ User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_181)
   </assertionResult>
   <responseHeader class="java.lang.String">HTTP/1.1 200 OK
 Server: nginx/1.15.2
-Date: Wed, 04 Dec 2019 06:27:08 GMT
+Date: Sat, 07 Dec 2019 14:37:02 GMT
 Content-Type: text/json;charset=UTF-8
 Content-Length: 85
 Connection: keep-alive
@@ -190,7 +189,7 @@ User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_181)
   <queryString class="java.lang.String"></queryString>
   <java.net.URL>http://10.31.0.59/verifycode?cellphone=13623811810&amp;ty=false&amp;version=140</java.net.URL>
 </httpSample>
-<httpSample t="13" it="0" lt="13" ct="0" ts="1575440828693" s="true" lb="C0008_获取验证码_版本号异常" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="329" sby="167" sc="1" ec="0" ng="1" na="1" hn="jq-PC">
+<httpSample t="16" it="0" lt="15" ct="0" ts="1575729422545" s="true" lb="C0008_获取验证码_版本号异常" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="329" sby="167" sc="1" ec="0" ng="1" na="1" hn="jq-PC">
   <assertionResult>
     <name>Response Assertion</name>
     <failure>false</failure>
@@ -198,7 +197,7 @@ User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_181)
   </assertionResult>
   <responseHeader class="java.lang.String">HTTP/1.1 200 OK
 Server: nginx/1.15.2
-Date: Wed, 04 Dec 2019 06:27:08 GMT
+Date: Sat, 07 Dec 2019 14:37:02 GMT
 Content-Type: text/json;charset=UTF-8
 Content-Length: 85
 Connection: keep-alive
@@ -217,7 +216,7 @@ User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_181)
   <queryString class="java.lang.String"></queryString>
   <java.net.URL>http://10.31.0.59/verifycode?cellphone=13623811811&amp;ty=false&amp;version=abc</java.net.URL>
 </httpSample>
-<httpSample t="23" it="0" lt="23" ct="0" ts="1575440828710" s="true" lb="C0009_获取验证码_重复获取" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="324" sby="166" sc="1" ec="0" ng="1" na="1" hn="jq-PC">
+<httpSample t="14" it="0" lt="14" ct="0" ts="1575729422569" s="true" lb="C0009_获取验证码_重复获取" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="324" sby="166" sc="1" ec="0" ng="1" na="1" hn="jq-PC">
   <assertionResult>
     <name>Response Assertion</name>
     <failure>false</failure>
@@ -225,7 +224,7 @@ User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_181)
   </assertionResult>
   <responseHeader class="java.lang.String">HTTP/1.1 200 OK
 Server: nginx/1.15.2
-Date: Wed, 04 Dec 2019 06:27:08 GMT
+Date: Sat, 07 Dec 2019 14:37:02 GMT
 Content-Type: text/json;charset=UTF-8
 Content-Length: 80
 Connection: keep-alive
@@ -244,7 +243,7 @@ User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_181)
   <queryString class="java.lang.String"></queryString>
   <java.net.URL>http://10.31.0.59/verifycode?cellphone=13623818717&amp;ty=true&amp;version=141</java.net.URL>
 </httpSample>
-<httpSample t="14" it="0" lt="14" ct="0" ts="1575440828738" s="true" lb="C00010_获取验证码_不带任何参数访问接口" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="294" sby="125" sc="1" ec="0" ng="1" na="1" hn="jq-PC">
+<httpSample t="20" it="0" lt="20" ct="0" ts="1575729422587" s="true" lb="C00010_获取验证码_不带任何参数访问接口" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="294" sby="125" sc="1" ec="0" ng="1" na="1" hn="jq-PC">
   <assertionResult>
     <name>Response Assertion</name>
     <failure>false</failure>
@@ -252,7 +251,7 @@ User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_181)
   </assertionResult>
   <responseHeader class="java.lang.String">HTTP/1.1 200 OK
 Server: nginx/1.15.2
-Date: Wed, 04 Dec 2019 06:27:08 GMT
+Date: Sat, 07 Dec 2019 14:37:02 GMT
 Content-Type: text/json;charset=UTF-8
 Content-Length: 50
 Connection: keep-alive
